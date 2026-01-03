@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
         - name: python-app
-          image: ghcr.io/killmonger331/K8s-Python-CI-CD:latest
+          image: ghcr.io/killmonger331/k8-python-ci-cd:latest
           ports:
             - containerPort: 8000
           env:
