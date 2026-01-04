@@ -10,7 +10,7 @@ permissions:
   packages: write
 
 env:
-  IMAGE_NAME: ghcr.io/${{ github.repository }}:latest
+  IMAGE_NAME: ghcr.io/killmonger331/k8-python-ci-cd:latest
   AWS_REGION: us-east-1
   CLUSTER_NAME: your-eks-cluster-name
 
