@@ -5,16 +5,13 @@ metadata:
   namespace: dev
   annotations:
     kubernetes.io/ingress.class: alb
-
-    # ALB settings
     alb.ingress.kubernetes.io/scheme: internet-facing
     alb.ingress.kubernetes.io/target-type: ip
-
-    # HTTPS settings
     alb.ingress.kubernetes.io/listen-ports: '[{"HTTP":80},{"HTTPS":443}]'
-    alb.ingress.kubernetes.io/ssl-redirect: '443'
     alb.ingress.kubernetes.io/certificate-arn: arn:aws:acm:us-east-1:200686070529:certificate/5dd822ca-91a2-4edb-aeee-5569f14f6e90
+    alb.ingress.kubernetes.io/ssl-redirect: '443'
 spec:
+  ingressClassName: alb
   rules:
     - host: k8s.richard-morales.com
       http:
@@ -25,6 +22,6 @@ spec:
               service:
                 name: python-app
                 port:
-                  number: 8000
+                  number: 80
 
                   
