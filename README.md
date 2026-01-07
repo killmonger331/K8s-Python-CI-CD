@@ -7,7 +7,7 @@ The application is exposed securely via a custom domain and demonstrates a reuse
 <img width="557" height="1113" alt="k8s_cicd_architecture" src="https://github.com/user-attachments/assets/7732e586-b7e4-47a7-84e8-c1747a765e38" />
 
 
-#Key Features
+# Key Features
 - Kubernetes deployment on AWS EKS
 - Fully automated CI/CD pipeline using GitHub Actions
 - Docker image publishing to GitHub Container Registry (GHCR)
