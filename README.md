@@ -3,28 +3,9 @@ A production-style Python web application deployed to AWS EKS with Docker, GitHu
 The application is exposed securely via a custom domain and demonstrates a reuseable Kubernetes-based deployment platform rather than a single standalone app.
 
 # Architecture Overview 
-Developer
-  ↓
-GitHub Push
-  ↓
-GitHub Actions
-  - Build Docker image
-  - Push image to GHCR
-  - Deploy to EKS
-  ↓
-AWS EKS (Kubernetes)
-  - Deployment
-  - Service
-  - ALB Ingress
-  ↓
-AWS Application Load Balancer
-  - HTTPS (ACM)
-  - Custom domain (Route53)
-  ↓
-k8s.richard-morales.com
 
-#Architecture Diagram
 <img width="557" height="1113" alt="k8s_cicd_architecture" src="https://github.com/user-attachments/assets/7732e586-b7e4-47a7-84e8-c1747a765e38" />
+
 
 #Key Features
 - Kubernetes deployment on AWS EKS
