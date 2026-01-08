@@ -45,10 +45,22 @@ On every push to main:
 - Kubernetes-native service discovery
 - Infrastructure separated from application code
 
-# How to Deploy
-GET https://k8s.richard-morales.com
-This repository functions as a template platform, new applications can be deployed by replacing app code, updating image name, or adding a new ingress host. 
+## Example Deployment (Demo)
 
+This repository deploys a sample FastAPI application to AWS EKS using
+Docker, GitHub Actions CI/CD, and AWS ALB Ingress.
+
+When the cluster is running, the demo app responds at:
+
+GET /
+
+Example response:
+```json
+{
+  "status": "ok",
+  "message": "Kubernetes app is running"
+}
+```
 # What this Project Demonstrates
 For this project i had to troubleshoot and debug particular issues that would arise in DNS, infrastructure code, and ALB. I learned and practiced the automated use of GitHub Actions, Infrastructure automation, and Kubernetes deployment patterns. The main takeaway was how applications are delivered, not just how they are written. 
 # Future Improvements
